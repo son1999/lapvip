@@ -1,0 +1,121 @@
+.page-about{
+    background-color: #fff;
+    .about-icon{
+        padding-top: 70px;
+        padding-bottom: 40px;
+        .about-icon-item{
+            text-align: center;
+            h5{
+                color: #0079ff;
+                font-size: 18px;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+            p{
+                color: #747474;
+            }
+        }
+    }
+    .box-about{
+        h4{
+            font-size: 28px;
+            color: rgba(6, 102, 22, 255);
+            font-weight: 500;
+            text-align: center;
+            max-width: 478px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 70px;
+        }
+        .box-about-item{
+            border: 1px solid #ededed;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px 0px #eee1ff;
+            img{
+                width: 100%;
+                padding-top: 90px;
+                margin-bottom: 15px;
+            }
+            h5{
+                font-size: 18px;
+                text-align: center;
+                padding-bottom: 18px;
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 129px;
+                    border-bottom: 2px solid #007eff;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                span{
+                    display: block;
+                    color: #007eff;
+                    font-size: 18px;
+                    margin-top: 5px;
+                }
+            }
+            p{
+                font-size: 16px;
+                color: rgba(51, 51, 51, 255);
+                text-align: center;
+                padding: 30px 30px 60px;
+            }
+        }
+    }
+    .about-percent{
+        padding-top: 90px;
+        padding-bottom: 85px;
+        img{
+            max-width: 100%;
+        }
+        h5{
+            font-size: 36px;
+            color: rgba(0, 14, 61, 255);
+            border-bottom: 2px solid #0060ff;
+            display: inline-block;
+        }
+        h6{
+            font-size: 24px;
+            color: rgba(0, 14, 61, 255);
+        }
+        p{
+            font-size: 18px;
+            color: rgba(0, 14, 61, 255);
+        }
+    }
+    .why-about{
+        background-image: url('../images/bg-why-about.jpg');
+        background-size: cover;
+        padding-top: 85px;
+        padding-bottom: 90px;
+        h5{
+            font-size: 22.41682px;
+            color: rgba(255, 255, 255, 255);
+            text-align: center;
+        }
+        h6{
+            text-align: center;
+            font-size: 36px;
+            color: rgba(255, 255, 255, 255);
+            margin-bottom: 54px;
+            span{
+                color: #ffea00;
+            }
+        }
+        .why-about-item{
+            overflow: hidden;
+            img{
+                border-radius: 6px;
+                width: 100%;
+            }
+            @media (max-width: 767px) {
+                @include col-w(50%);
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

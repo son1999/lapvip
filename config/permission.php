@@ -1,0 +1,53 @@
+<?php
+
+return [
+    'backend' => [
+//        'gallery'       => ['controller'=>'Gallery','title' => 'Thư viện Ảnh'],
+        'product'          => ['controller'=>'Product','title' => 'Sản phẩm', 'perm_extra' => ['tag' => 'Gán tag','filter' => 'Gán bộ lọc']],
+        'product_specs_template'          => ['controller'=>'ProductSpecsTemplate','title' => 'Mẫu thông số sản phẩm'],
+        'product_compare_template'          => ['controller'=>'ProductCompareTemplate','title' => 'Mẫu thông số so sánh'],
+        'category'      => ['controller'=>'Category','title' => 'Danh Mục'],
+        'customer'      => ['controller'=>'Customer','title' => 'Khách hàng'],
+        'customergroup' => ['controller'=>'CustomerGroup','title' => 'Nhóm khách hàng'],
+        'feature'       => ['controller'=>'Feature','title' => 'Banner'],
+        'collection'    => ['controller'=>'Collection','title' => 'Bộ sản phẩm'],
+//        'f_small'       => ['controller'=>'Feature_Small','title' => 'Banner Small'],
+        'subscriber'    => ['controller'=>'Subscriber','title' => 'Subscriber'],
+        'file'          => ['controller'=>'File','title' => 'File','perm' => ['upload' => 'Upload']],
+        'tag'           => ['controller'=>'Tag','title' => 'Tag'],
+        'filter'        => ['controller'=>'Filter','title' => 'Hạng mục sản phẩm', 'perm_extra' => ['filter' => 'Gán bộ lọc']],
+        'filter_cate'   => ['controller'=>'FilterCate','title' => 'Chủng loại sản phẩm'],
+        'news'          => ['controller'=>'News','title' => 'Tin tức','perm_extra' => ['tag' => 'Gán tag']],
+        'page'          => ['controller'=>'StaticPage','title' => 'Trang tĩnh'],
+//        'contact'        => ['controller'=>'Contact', 'title' => 'Liên Hệ'],
+        'user'          => ['controller'=>'User','title' => 'Người dùng'],
+        'role'          => ['controller'=>'Role','title' => 'Phân quyền'],
+        'menu'          => ['controller'=>'Menu','title' => 'Menu'],
+        'comment_post'  => ['controller'=>'CommentPost','title' => 'Bình luận Sản phẩm'],
+        'comment_news'  => ['controller'=>'Comment_News', 'title' => 'Comment News'],
+        'question'      => ['controller'=>'Question', 'title' => 'Question'],
+        'config'        => ['controller'=>'Config','title' => 'Cấu hình website','form' => 1,'perm'=>['change' => 'Thay đổi cấu hình']],
+        'order'         => ['controller' => 'Order', 'title' => 'Đơn hàng','perm_extra' => [
+            'refund' => 'Xác nhận hoàn tiền',
+            'assign' => 'Tự gán việc',
+            'log'   => 'Xem Log'
+        ]],
+        'groups_video'                  => ['controller'=>'G_Video','title' => 'Video Groups'],
+        'video'                         => ['controller'=>'Video','title' => 'Video'],
+        'coupon'                        => ['controller' => 'Coupon', 'title' => 'Mã giảm giá'],
+        'warehouse'                     => ['controller'=>'Warehouse', 'title' => 'Warehouse'],
+        'old_collection'                => ['controller'=>'OldCollection', 'title' => 'Old collection'],
+        'answer_question'               => ['controller'=>'AnswerQuestion', 'title' => 'Question and Answer'],
+        'installment_scenarios'         => ['controller'=>'InstallmentScenarios', 'title' => 'Installment Scenarios'],
+        'installment_bank'              => ['controller'=>'InstallmentBank', 'title' => 'Installment Bank'],
+        'order_installment'             => ['controller' => 'OrderInstallment', 'title' => 'Đơn hàng trả góp','perm_extra' => [
+            'export' => 'Xuất file Execl',
+        ]],
+//        'instagram'     => ['controller'=>'Instagram', 'title' => 'Instagram Box'],
+//        'spin'     => ['controller'=>'Spin', 'title' => 'Spin'],
+//        'story_wt'     => ['controller'=>'StoryWT', 'title' => 'WT\'Story'],
+        'dashboard'                     => ['controller'=>'DashBoard', 'title' => 'Thống kê'],
+        'card_pay_contact'                     => ['controller'=>'CustomerCardPay', 'title' => 'Thông tin khách hàng đăng kí trả góp qua thẻ'],
+        'supports'                     => ['controller'=>'Supports', 'title' => 'Thông tin nhân viên hỗ trợ trực tuyến'],
+    ]
+];

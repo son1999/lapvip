@@ -1,0 +1,34 @@
+.section_brannd{
+    background-color: #fff;
+    padding: 20px 10px;
+    h5{
+        font-size: 24px;
+        color: #333333;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+.brand_laptop{
+    .brand_laptop-item{
+        text-align: center;
+        padding-bottom: 20px;
+        .image{
+            display: block;
+            height: 50px;
+            width: 100%;
+            img{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                object-fit: scale-down;
+            }
+        }
+        .name{
+            display: block;
+            font-size: 16px;
+            color: rgba(51, 51, 51, 255);
+            margin-top: 40px;
+        }
+    }
+}    

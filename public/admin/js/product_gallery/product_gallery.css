@@ -1,0 +1,25 @@
+.gallery { margin: auto;}
+.gallery ul {padding:0;}
+.gallery ul li { display: inline-block; position: relative; width:202px;height:202px;overflow:hidden;margin:0 10px 20px; border:1px solid rgba(0, 0, 0, 0.1)}
+.gallery ul li img{width:100%;height:auto}
+.gallery .actions { display:none; position: absolute; top: 0; right: 0; width: 200px; height: 200px; background: rgb(0,0,0,0.7); justify-content: space-around; align-items: center; }
+.gallery .actions a, .gallery .actions a:hover{color:#fff; font-size: 18px}
+.gallery ul li:hover .actions{display: flex}
+.coverImage img{ height:40px; border:1px; padding:2px; background:#fefefe; }
+
+.gallery-loading{position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 999999;background-color: rgb(0,0,0,0.5);display: flex;justify-content:center;align-items:center}
+.bg-loading{background: #fff;border-radius: 5px;padding: 20px}
+.loading-notify{color: #318cb9;font-size: 20px;font-weight: bold}
+
+/* DRAG SORTABLE */
+
+/* dont allow select */
+.gallery ul li {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.gallery ul li.sortable-placeholder{border: 1px dashed #CCC;background:none;width:200px;height:200px;}

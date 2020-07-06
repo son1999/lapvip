@@ -1,0 +1,52 @@
+.list_store{
+    .stores{
+        .loc{
+            margin-bottom: 3px;
+            span{
+                &:before{
+                    content: '\f0da';
+                    font-family: FontAwesome;
+                    margin-right: 4px;
+                    color: #169c2c;
+                }
+            }
+        }
+    }
+    .introduce{
+        .group-reg{
+            @extend .d-flex;
+            @media (max-width: 992px){
+                flex-wrap: wrap;
+            }
+            a{
+                display: inline-block;
+                flex: 0 0 25%;
+                @media (max-width: 992px){
+                    flex: 0 0 50%;
+                }
+                .wrap-img{
+                    width: 100%;
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+                    height: 0;
+                    padding-bottom: 66.67%;
+                    border: 1px solid #ccc;
+                    background-color: #fff;
+                }
+                img{
+                    position: absolute;
+                    object-fit: cover;
+                    padding: 3px;
+                }
+            }
+        }
+    }
+}
+.page-list-store{
+    #map{
+        width: 100%;
+        max-width: 100%;
+        height: 500px;
+    }
+}

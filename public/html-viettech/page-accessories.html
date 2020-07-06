@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <myheader></myheader>
+        <main>
+            <div class="container">
+                <breadcrumb class="px-0"></breadcrumb>
+                <div class="banner-accsessories">
+                    <a href="#"><img src="images/banner_accessories.png" alt=""></a>
+                    <a href="#"><img src="images/banner_accessories-1.png" alt=""></a>
+                </div>
+                <list-cat-accessories></list-cat-accessories>
+                <div class="container mt-5 mb-5">
+                    <home_title home_title="Phụ kiện nổi bật"></home_title>
+                    <div class="row">
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                        <product_item_2 class="col-6 col-md-3 col-lg-5-2 p-0"></product_item_2>
+                    </div>
+                    <div class="bg-white row py-5 justify-content-center">
+                        <a href="#" class="px-4 py-2 border">Xem thêm 500 sản phẩm →</a>
+                    </div>
+                </div>
+                <list-cat-accessories class="mb-5"></list-cat-accessories>
+            </div>
+        </main>
+        <myfooter></myfooter>
+    </div>
+    
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'list-cat-accessories': httpVueLoader('list-cat-accessories.vue'),
+                'product_item_2': httpVueLoader('product_item_2.vue'),
+                'home_title': httpVueLoader('home_title.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

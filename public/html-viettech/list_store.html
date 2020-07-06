@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Product Detail</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <myheader></myheader>
+        <div class="container page-list-store">
+            <breadcrumb></breadcrumb>
+            <div id="map"></div>
+            <div id="info_div"></div>
+            <list_store></list_store>
+
+        </div>
+        <myfooter></myfooter>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'list_store': httpVueLoader('list_store.vue'),
+            },
+        });
+    </script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        function initMap() {
+            var myMapCenter = {lat: 40.785091, lng: -73.968285};
+
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: myMapCenter,
+                zoom: 14
+            });
+
+
+            function markStore(storeInfo){
+
+                // Create a marker and set its position.
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: storeInfo.location,
+                    title: storeInfo.name
+                });
+
+                // show store info when marker is clicked
+                marker.addListener('click', function(){
+                    showStoreInfo(storeInfo);
+                });
+            }
+
+            // show store info in text box
+            function showStoreInfo(storeInfo){
+                var info_div = document.getElementById('info_div');
+                info_div.innerHTML = 'Store name: '
+                    + storeInfo.name
+                    + '<br>Hours: ' + storeInfo.hours;
+            }
+
+            var stores = [
+                {
+                    name: 'Store 1',
+                    location: {lat: 40.785091, lng: -73.968285},
+                    hours: '8AM to 10PM'
+                },
+                {
+                    name: 'Store 2',
+                    location: {lat: 40.790091, lng: -73.968285},
+                    hours: '9AM to 9PM'
+                }
+            ];
+
+            stores.forEach(function(store){
+                markStore(store);
+            });
+        }
+   
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjSi0T3S40gqcRxUQk47Y8Z-_rIwtHCN4&callback=initMap" async defer></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/bootstrap-rating.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

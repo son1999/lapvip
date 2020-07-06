@@ -1,0 +1,52 @@
+.brand-tra-gop-list{
+    background: #fff;
+    padding: 20px;
+    ul{
+        padding: 0;
+        margin: 0;
+        @extend .row;
+    }
+    li{
+        position: relative;
+        height: 75px;
+        margin-right: 19px;
+        margin-bottom: 19px;
+        @include col-w(145px);
+        input{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0;
+        }
+        figure{
+            border: 1px dashed #e1e1e1;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        input:checked ~ figure{
+            border: 1px solid #ed1b24;
+        }
+    }
+}
+@media(max-width: 480px){
+    .brand-tra-gop-list li{
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+        @include col-w(calc(50% - 10px));
+    }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <myheader></myheader>
+        <main>
+            <div class="container">
+                <breadcrumb class="px-0"></breadcrumb>
+            </div>
+            <div class="container banner_page_laptop">
+                <div class="js-carousel" data-items="1" data-arrows="false">
+                    <a href="#" class="banner_item">
+                        <img src="images/banner_page_laptop.jpg" alt="">
+                    </a>
+                    <a href="#" class="banner_item">
+                        <img src="images/banner_page_laptop.jpg" alt="">
+                    </a>
+                    <a href="#" class="banner_item">
+                        <img src="images/banner_page_laptop.jpg" alt="">
+                    </a>
+                    <a href="#" class="banner_item">
+                        <img src="images/banner_page_laptop.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            
+
+            <div class="container">
+                <div class="head-filter-page">
+                    <h2>phền mềm</h2>
+                    <div class="filter-main">
+                        <span>Lọc</span>
+                        <ul class="list-cat">
+                            <li><a href="#">Tất cả phần mềm</a></li>
+                            <li><a href="#">Diệt Virus</a></li>
+                            <li><a href="#" class="active">Surface Pro</a></li>
+                            <li><a href="#">Surface Book</a></li>
+                            <li><a href="#">Windows</a></li>
+                            <li><a href="#">Phần mềm khác</a></li>
+                        </ul>
+                        <div class="filter-sort">
+                            <button type="button"> Sắp xếp theo: <span class="sortText">Bán chạy nhất</span></button>
+                            <div class="has-dropdowm">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="has-icon" href="javasctip:;">Giá cao đến thấp</a>
+                                    </li>
+                                    <li>
+                                        <a class="has-icon" href="javasctip:;">Giá thấp đến cao</a>
+                                    </li>
+                                    <li>
+                                        <a class="has-icon sortdefault" href="javasctip:;">Bán chạy nhất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-list m-0">
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                    <product_item_2 class="col-6 col-md-4 col-lg-3"></product_item_2>
+                </div>
+                <home_title home_title="sản phẩm bạn vừa xem" class="mt-5"></home_title>
+                <div class="js-carousel box-suggest mb-4" data-items="5" data-dots="false" data-loop="true">
+                    <div class="item">
+                        <product_item_2></product_item_2>
+                    </div>
+                    <div class="item">
+                        <product_item_2></product_item_2>
+                    </div>
+                    <div class="item">
+                        <product_item_2></product_item_2>
+                    </div>
+                    <div class="item">
+                        <product_item_2></product_item_2>
+                    </div>
+                    <div class="item">
+                        <product_item_2></product_item_2>
+                    </div>
+                    <div class="item">
+                        <product_item_2></product_item_2>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <myfooter></myfooter>
+    </div>
+
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'head-price': httpVueLoader('head-price.vue'),
+                'brand_laptop': httpVueLoader('brand_laptop.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'home_title': httpVueLoader('home_title.vue'),
+                'product_item_2': httpVueLoader('product_item_2.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/magiczoom.js"></script>
+    <script src="js/bootstrap-rating.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

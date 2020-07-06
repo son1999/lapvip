@@ -1,0 +1,16 @@
+.banner-accsessories{
+    @extend .d-flex;
+    a{
+        padding: 0;
+        display: inline-block;
+        padding-bottom: 10%;
+        position: relative;
+        @extend .col-6;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+    }
+}

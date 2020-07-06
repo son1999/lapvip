@@ -1,0 +1,218 @@
+.fs-vdsboxs {
+  padding: 20px;
+  background-color: #2a2a2a;
+  .fs-newsrow {
+    margin: 0 -10px;
+  }
+  .fs-newscol5 {
+    width: 55%;
+  }
+  .fs-newscol {
+    float: left;
+    padding: 0 10px;
+    position: relative;
+  }
+  .fs-vds-tit {
+    margin-bottom: 13px;
+  }
+
+  .fs-vds-tit span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+  }
+
+  .fs-vds-tit img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .fs-iframes {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+  }
+
+  .fs-iframes > iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .fs-vds-bots {
+    padding: 8px 0 5px;
+    font-size: 13px;
+  }
+
+  .fs-vds-bots a {
+    color: #337ab7;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .fs-newscol6 {
+    width: 45%;
+  }
+  .fs-newscol {
+    float: left;
+    padding: 0 10px;
+    position: relative;
+  }
+  .fs-vds-view {
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .fs-vds-time {
+    color: #9b9b9b;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px;
+  }
+
+  .fs-vds-flow {
+    text-align: right;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .fs-vds-ul ul li a {
+    display: block;
+    position: relative;
+    padding: 10px;
+  }
+
+  .fs-vds-ul ul li a:hover {
+    background-color: #3c3c3c;
+  }
+
+  .fs-vds-ul ul li.active a {
+    background-color: #555;
+  }
+
+  .fs-vds-img {
+    position: relative;
+    width: 112px;
+    float: left;
+  }
+
+  .fs-vds-ul ul li a .fs-vds-img:before {
+    content: "";
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -16px 0 0 -16px;
+    background: url("../images/youtube1.png") no-repeat center;
+  }
+
+  .fs-vds-ul ul li.active a .fs-vds-img:before {
+    content: "Đang xem";
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    left: 0;
+    margin: -9px 0 0 0;
+  }
+
+  .fs-vds-h {
+    height: 60px;
+    overflow: hidden;
+    margin-left: 122px;
+    line-height: 1.43;
+    color: #fff;
+  }
+
+  .fs-ne3-left ul {
+    margin: 0 -5px;
+  }
+
+  .fs-ne3-left ul li {
+    padding: 0 5px;
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .fs-ne3-img {
+    display: block;
+  }
+
+  .fs-ne3-img img {
+    width: 100%;
+  }
+
+  .fs-ne3-tit {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.33;
+    color: #3d3d3d;
+    padding: 8px 0 10px;
+  }
+
+  .fs-ne3-tit:hover {
+    color: #337ab7;
+  }
+
+  .fs-ne3-bot {
+    font-size: 13px;
+    color: #9b9b9b;
+  }
+
+  .fs-ne3-bot a {
+    color: #337ab7;
+  }
+
+  .fs-ne3-time {
+    display: none;
+  }
+  .fs-vds-ul ul li a {
+    display: block;
+    position: relative;
+    padding: 10px;
+  }
+  .fs-vds-ul ul li.active a {
+    background-color: #555;
+  }
+  .fs-vds-img {
+    position: relative;
+    width: 112px;
+    float: left;
+  }
+  .fs-vds-h {
+    height: 60px;
+    overflow: hidden;
+    margin-left: 122px;
+    line-height: 1.43;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+@media(max-width: 767px){
+  .fs-vdsboxs .fs-newscol5{
+    width: 100%;
+  }
+  .fs-vdsboxs .fs-newscol6{
+    width: 100%;
+  }
+}

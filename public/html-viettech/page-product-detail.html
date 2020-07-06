@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Product Detail</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <myheader></myheader>
+        <div class="container">
+            <breadcrumb></breadcrumb>
+            <div class="product-wrapper">
+                <layout1.1-product></layout1.1-product>
+            </div>
+            <sidebar-right-specifications class="show-mobile"></sidebar-right-specifications>
+            <div class="tab-product-slider">
+                <ul class="tab-control">
+                    <li><a href="javascipt:;" class="active" data-tab="#tab-1">Máy tính xách tay tương tự</a></li>
+                    <li><a href="javascipt:;" data-tab="#tab-2">Máy tính xách tay cùng hãng</a></li>
+                </ul>
+                <div class="tab-product">
+                    <div class="tab-item" id="tab-1">
+                        <div class="js-carousel box-suggest mb-4" data-items="5" data-dots="false" data-loop="true">
+                            <div class="item">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="item">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="item">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="item">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="item">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="item">
+                                <product_item_2></product_item_2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-item" id="tab-2" style="display: none;">
+                        <div class="js-carousel box-suggest mb-4" data-items="5" data-dots="false" data-loop="true">
+                            <div class="item">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="item">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="item">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="item">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="item">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="item">
+                                <product_item_2></product_item_2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="main-specifications-wrapper">
+                <div class="row">
+                    <div class="col-lg-9 has-bg">
+                        <layout-product-tab></layout-product-tab>
+                        <layout-product-evaluate></layout-product-evaluate>
+                        <layout-product-comment></layout-product-comment>
+                        <layout-product-faq></layout-product-faq>
+                        <pagination></pagination>
+                        <orther_gallery></orther_gallery>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="sidebar">
+                            <sidebar-right-specifications></sidebar-right-specifications>
+                            <sidebar-right-accessories></sidebar-right-accessories>
+                            <sidebar-right-article></sidebar-right-article>
+                            <sidebar-right-compare-product></sidebar-right-compare-product>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <home_title home_title="sản phẩm bạn vừa xem"></home_title>
+            <div class="js-carousel box-suggest mb-4" data-items="5" data-dots="false" data-loop="true">
+                <div class="item">
+                    <product_item_2></product_item_2>
+                </div>
+                <div class="item">
+                    <product_item_2></product_item_2>
+                </div>
+                <div class="item">
+                    <product_item_2></product_item_2>
+                </div>
+                <div class="item">
+                    <product_item_2></product_item_2>
+                </div>
+                <div class="item">
+                    <product_item_2></product_item_2>
+                </div>
+                <div class="item">
+                    <product_item_2></product_item_2>
+                </div>
+            </div>
+        </div>
+        <myfooter></myfooter>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'pagination': httpVueLoader('pagination.vue'),
+                'home_title': httpVueLoader('home_title.vue'),
+
+                /* Layout Sidebar */
+                'sidebar-right-accessories': httpVueLoader('sidebar-right-accessories.vue'),
+                'sidebar-right-specifications': httpVueLoader('sidebar-right-specifications.vue'),
+                'sidebar-right-article': httpVueLoader('sidebar-right-article.vue'),
+                'sidebar-right-compare-product': httpVueLoader('sidebar-right-compare-product.vue'),
+
+
+                /* Layout Product */
+                'layout-product-evaluate': httpVueLoader('layout-product-evaluate.vue'),
+                'layout-product-faq': httpVueLoader('layout-product-faq.vue'),
+                'layout-product-tab': httpVueLoader('layout-product-tab.vue'),
+                'layout-product-comment': httpVueLoader('layout-product-comment.vue'),
+                'layout1.1-product': httpVueLoader('layout1.1-product.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'product_item_2': httpVueLoader('product_item_2.vue'),
+                'orther_gallery': httpVueLoader('orther_gallery.vue')
+            },
+        });
+    </script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/bootstrap-rating.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filter</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <myheader></myheader>
+            <breadcrumb></breadcrumb>
+            <div class="filter">
+                <div class="row">
+                    <div class="col-md-3 has-padding-none">
+                        <slidebar-goi-tra-gop></slidebar-goi-tra-gop>
+                        <sidebar-guild></sidebar-guild>
+                        <filter-left-product></filter-left-product>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="list-tab-cat">
+                            <a href="javascript:;" class="active">điện thoại</a>
+                            <a href="javascript:;">lap top</a>
+                            <a href="javascript:;">máy tính bảng</a>
+                        </div>
+                        <filter-right-product></filter-right-product>
+                        <div class="row m-0 p-list">
+                            <div class="col-6 col-lg-3 p-0">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="col-6 col-lg-3 p-0">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="col-6 col-lg-3 p-0">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="col-6 col-lg-3 p-0">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="col-6 col-lg-3 p-0">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="col-6 col-lg-3 p-0">
+                                <product_item_2></product_item_2>
+                            </div>
+                            <div class="col-6 col-lg-3 p-0">
+                                <product_item_2></product_item_2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <layout-product-faq class="mx-0 mt-4"></layout-product-faq>
+                        <pagination class="mx-0"></pagination>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'filter-left-product': httpVueLoader('filter-left-product.vue'),
+                'filter-right-product': httpVueLoader('filter-right-product.vue'),
+                'pagination': httpVueLoader('pagination.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'product_item_2': httpVueLoader('product_item_2.vue'),
+                'slidebar-goi-tra-gop': httpVueLoader('slidebar-goi-tra-gop.vue'),
+                'sidebar-guild': httpVueLoader('sidebar-guild.vue'),
+                'layout-product-faq': httpVueLoader('layout-product-faq.vue'),
+                'pagination': httpVueLoader('pagination.vue')
+            },
+        });
+    </script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>

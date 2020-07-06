@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video tin tức</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <myheader></myheader>
+            <breadcrumb></breadcrumb>
+            <div class="page-video-hot">
+                <div class="row">
+                    <div class="col-12 col-lg-9">
+                        <div class="video-hot-content-left">
+                            <video_big></video_big>
+                            <video_left_content></video_left_content>
+                            <video_left_content></video_left_content>
+                            <video_left_content></video_left_content>
+                            <video_left_content></video_left_content>
+                            <div class="views-more-news text-center"><a href="#" class="load-more-blog">Xem thêm tin tức →</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="block-sidebar">
+                            <h3 class="heading-sidebar">Xem nhiều</h3>
+                            <blog-sidebar class="type-1" blog_title="Vào ngày 10/9/2019 ( vào lúc 23h, giờ Việt Nam)" img_src="images/sidebar-img-1.png"></blog-sidebar>
+                            <blog-sidebar class="type-1" blog_title="Vào ngày 10/9/2019 ( vào lúc 23h, giờ Việt Nam) Apple mới chính thức ra mắt bộ ba iPhone 11, iPhone 11 Pro và iPhone 11 Pro Max. Tuy nhiên mới đây mức giá cho bộ ba iPhone 2019 này cũng dần được hé lộ nhưng hiện tại cũng chỉ là tin đồn và chưa chính thức." img_src="images/sidebar-img-1.png"></blog-sidebar>
+                            <blog-sidebar class="type-1" blog_title="Vào ngày 10/9/2019 ( vào lúc 23h, giờ Việt Nam) Apple mới chính thức ra mắt bộ ba iPhone 11, iPhone 11 Pro và iPhone 11 Pro Max. Tuy nhiên mới đây mức giá cho bộ ba iPhone 2019 này cũng dần được hé lộ nhưng hiện tại cũng chỉ là tin đồn và chưa chính thức." img_src="images/sidebar-img-1.png"></blog-sidebar>
+                            <blog-sidebar class="type-1" blog_title="Vào ngày 10/9/2019 ( vào lúc 23h, giờ Việt Nam) Apple mới chính thức ra mắt bộ ba iPhone 11, iPhone 11 Pro và iPhone 11 Pro Max. Tuy nhiên mới đây mức giá cho bộ ba iPhone 2019 này cũng dần được hé lộ nhưng hiện tại cũng chỉ là tin đồn và chưa chính thức." img_src="images/sidebar-img-1.png"></blog-sidebar>
+                            <a href="#" class="load-more-blog">Xem tất cả →</a>
+                        </div>
+
+                        <div class="block-sidebar">
+                            <h3 class="heading-sidebar">Sản phẩm mới</h3>
+                            <blog-sidebar class="type-2" blog_title="Vsmart Joy 2+ 2GB-32GB" img_src="images/sidebar-img-2.png"></blog-sidebar>
+                            <blog-sidebar class="type-2" blog_title="Vsmart Joy 2+ 2GB-32GB" img_src="images/sidebar-img-2.png"></blog-sidebar>
+                            <blog-sidebar class="type-2" blog_title="Vsmart Joy 2+ 2GB-32GB" img_src="images/sidebar-img-2.png"></blog-sidebar>
+                            <blog-sidebar class="type-2" blog_title="Vsmart Joy 2+ 2GB-32GB" img_src="images/sidebar-img-2.png"></blog-sidebar>
+                            <a href="#" class="load-more-blog">Xem tất cả →</a>
+                        </div>
+
+                        
+
+                        <div class="block-sidebar">
+                            <h3 class="heading-sidebar">Sản phẩm mới</h3>
+                            <blog-sidebar class="type-3" blog_title="Nhận ngay thẻ cào điện thoại khi mua laptop Dell tại FPT Shop" img_src="images/sidebar-img-3.png"></blog-sidebar>
+                            <blog-sidebar class="type-3" blog_title="Nhận ngay thẻ cào điện thoại khi mua laptop Dell tại FPT Shop" img_src="images/sidebar-img-3.png"></blog-sidebar>
+                            <blog-sidebar class="type-3" blog_title="Nhận ngay thẻ cào điện thoại khi mua laptop Dell tại FPT Shop" img_src="images/sidebar-img-3.png"></blog-sidebar>
+                            <blog-sidebar class="type-3" blog_title="Nhận ngay thẻ cào điện thoại khi mua laptop Dell tại FPT Shop" img_src="images/sidebar-img-3.png"></blog-sidebar>
+                            <a href="#" class="load-more-blog">Xem tất cả →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <myfooter></myfooter>
+        </div>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'pagination': httpVueLoader('pagination.vue'),
+                'video_big': httpVueLoader('video_big.vue'),
+                'blog-sidebar': httpVueLoader('blog-sidebar.vue'),
+                'video_left_content': httpVueLoader('video_left_content.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+            },
+        });
+    </script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/magiczoom.js"></script>
+    <script src="js/bootstrap-rating.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>

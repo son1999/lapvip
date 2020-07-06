@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <myheader></myheader>
+        <main>
+            <div class="container">
+                <breadcrumb class="px-0"></breadcrumb>
+                <div class="bg-white p-3">
+                    <h2>Hướng dẫn mua hàng</h2>
+                    <p>
+                        Like Lapvip.com.vn để được cập nhật tin siêu phẩm sắp ra mắt và khuyến mãi hấp dẫn
+                        * Lần thứ 5 liên tiếp Lapvip Shop được vinh danh Thương hiệu mạnh Việt Nam
+                        * iPhone 6s Plus 32GB giảm ngay 1 triệu đồng tại Lapvip
+                    </p>
+                    <p>
+                        Kính chào quý khách hàng của FPT Shop!
+                        Chân thành cảm ơn quý khách đã tin tưởng và lựa chọn FPT Shop là điểm đến mua sắm.
+                        Tuy nhiên, có một thắc mắc lớn nhất là “làm thế nào để mua sản phẩm mình ưa thích một cách nhanh chóng và tiện lợi nhất”?
+                        Để giải đáp thắc mắc này, chúng tôi xin gửi tới quý khách hình ảnh hướng dẫn các bước mua hàng như sau:
+                    </p>
+                    <h6>Bước 1 : Tại giao diện trang chủ của FPT Shop (fptshop.com.vn)</h6>
+                    <figure>
+                        <img src="images/guild-1.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="images/guild-2.jpg" alt="">
+                        <figcaption class="pt-2 pb-3">Quý khách gõ vào thanh tìm kiếm sản phẩm mà mình quan tâm. Ví dụ quý khách đang muốn mua sản phẩm iPhone X, sau khi gõ hệ thống sẽ truy xuất ra các sản phẩm liên quan tới từ khóa mà quý khách muốn tìm,</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/guild-3.jpg" alt="">
+                        <figcaption class="pt-2 pb-3">Quý khách gõ vào thanh tìm kiếm sản phẩm mà mình quan tâm. Ví dụ quý khách đang muốn mua sản phẩm iPhone X, sau khi gõ hệ thống sẽ truy xuất ra các sản phẩm liên quan tới từ khóa mà quý khách muốn tìm,</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/guild-4.jpg" alt="">
+                        <figcaption class="pt-2 pb-3">Sau khi hiện hình thức thanh toán, quý khách có thể chọn 1 trong các hình thức thanh toán và tiếp tục làm theo hướng dẫn. Ví dụ: Nếu khách hàng muốn trả tiền mặt, quý khách có thể hoàn tất đơn hàng bằng cách bấm chọn “ĐẶT HÀNG”.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/guild-5.jpg" alt="">
+                        <figcaption class="pt-2 pb-3">Và quý khách đã hoàn tất việc đặt hàng, tư vấn viên của Lapvip Shop sẽ gọi điện để xác nhận đơn hàng của quý khách.
+                                Chúc quý khách thành công và hài lòng với sản phẩm mà mình đã chọn.
+                                Trân trọng cảm ơn quý khách đã tin tưởng và lựa chọn các sản phẩm tại Lapvip Shop</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </main>
+        <myfooter></myfooter>
+    </div>
+
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/magiczoom.js"></script>
+    <script src="js/bootstrap-rating.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

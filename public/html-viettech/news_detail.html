@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <myheader></myheader>
+        <main>
+            <div class="container news-detail-page">
+                <div class="news-detail-page-type">THÔNG TIN</div>
+                <blog-list-cat></blog-list-cat>
+                <div class="wrap-content">
+                    <news_detail_content></news_detail_content>
+                </div>
+            </div>
+        </main>
+        <myfooter></myfooter>
+    </div>
+
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'blog-list-cat': httpVueLoader('blog-list-cat.vue'),
+                'news_detail_content': httpVueLoader('news_detail_content.vue'),
+               
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/magiczoom.js"></script>
+    <script src="js/bootstrap-rating.min.js"></script>
+    <script defer="defer" async="async" src="https://apis.google.com/js/platform.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+
+</body>
+
+</html>

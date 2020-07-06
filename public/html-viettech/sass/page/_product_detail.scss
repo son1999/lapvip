@@ -1,0 +1,104 @@
+.tab-product-slider{
+    .tab-control{
+        padding: 0;
+        position: relative;
+        z-index: 11;
+        background-color: #fff;
+        border-bottom: 1px solid #eaeaea;
+        @extend .d-flex;
+        a{
+            font-size: 22px;
+            color: rgba($color: #333333, $alpha: 0.5);
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 20px;
+            display: inline-block;
+            position: relative;
+        }
+        .active{
+            color: rgba($color: #333333, $alpha: 1);
+            &::before{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                border-bottom: 3px solid #34a105;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+            }
+        }
+    }
+}
+
+.box-khuyen-mai-detail{
+    border: 1px solid #169c2c;
+    border-radius: 5px;
+    margin: 40px 0 20px;
+    .title{
+        background-color: #169c2c;
+        font-size: 12px;
+        color: white;
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 50px;
+        transform: translateY(-15px);
+        margin: 0 20px;
+        img{
+            margin-right: 5px;
+            vertical-align: -4px;
+        }
+    }
+    .content-khuyen-mai{
+        h4{
+            font-weight: bold;
+            font-size: 14px;
+            color: rgba(17, 17, 17, 255);
+            margin-bottom: 10px;
+        }
+        ul{
+            padding-left: 25px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        li{
+            position: relative;
+            padding-left: 15px;
+            color: rgba(17, 17, 17, 255);
+            &:empty(){
+                display: none;
+            }
+            &::before{
+                content: '';
+                left: 0;
+                top: 5px;
+                width: 5px;
+                height: 5px;
+                position: absolute;
+                display: inline-block;
+                border-radius: 5px;
+                background-color: #169c2c;
+            }
+        }
+    }
+}
+.emtry-desc-detail{
+    margin-bottom: 10px;
+    .item-desc{
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 6px;
+        &::before{
+            content: '';
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 5px;
+            background-image: url('../images/check_icon.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}

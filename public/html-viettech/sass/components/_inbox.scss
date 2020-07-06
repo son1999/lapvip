@@ -1,0 +1,102 @@
+.inbox{
+    position: relative;
+    z-index: 999;
+    .btn-show-popup{
+        position: fixed;
+        bottom: 0;
+        right: 30px;
+        background-color: #007dff;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 255);
+        padding: 6px 38px;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+    }
+    .popup_inbox{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+    }
+    .popup-main{
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    .popup_inbox-step1, .popup_inbox-step2, .popup_inbox-step3{
+        width: 250px;
+        padding: 18px;
+        h5{
+            color: #040474;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            color: #6480cd;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #efefef;
+        }
+        textarea{
+            border-radius: 5px;
+            width: 100%;
+            padding: 10px;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .popup_inbox-step1{
+        a, button{
+            color: #fff;
+            background-color: #007dff;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            line-height: 35px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+    }
+    .popup_inbox-step2{
+        text-align: center;
+        input{
+            font-size: 12px;
+            color: rgba(184, 185, 187, 255);
+            display: block;
+            border-radius: 4px;
+            border: 1px solid #d5d5d5;
+            width: 100%;
+            height: 35px;
+            padding: 0 15px;
+            margin-bottom: 10px;
+            &:focus{
+                outline: none;
+            }
+        }
+        a{
+            margin-top: 70px;
+            display: inline-block;
+            color: #fff;
+            background-color: #007dff;
+            padding: 8px 30px;
+            border-radius: 4px;
+        }
+    }
+    .popup_inbox-step3{
+        text-align: center;
+        padding-top: 34px;
+        padding-bottom: 37px;
+        h4{
+            font-size: 18px;
+            color: rgba(4, 4, 116, 255);
+            margin-top: 24px;
+        }
+    }
+}

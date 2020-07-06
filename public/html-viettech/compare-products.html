@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <myheader></myheader>
+        <main>
+            <div class="container page-compare-product">
+                <breadcrumb class="px-0 d-none d-md-block"></breadcrumb>
+                <banner_compare_products></banner_compare_products>
+                <main_compare_products class="d-none d-md-block"></main_compare_products>
+                <main_compare_products_mobile class="d-md-none"></main_compare_products_mobile>
+            </div>
+            
+        </main>
+        <myfooter></myfooter>
+    </div>
+
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'banner_compare_products': httpVueLoader('banner_compare_products.vue'),
+                'main_compare_products': httpVueLoader('main_compare_products.vue'),
+                'main_compare_products_mobile': httpVueLoader('main_compare_products_mobile.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/magiczoom.js"></script>
+    <script src="js/bootstrap-rating.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

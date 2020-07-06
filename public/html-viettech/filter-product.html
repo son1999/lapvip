@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filter</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <myheader></myheader>
+        <div class="container">
+            <breadcrumb></breadcrumb>
+            <div class="filter">
+                <div class="row">
+                    <div class="col-md-3 has-padding-none">
+                        <filter-left-product></filter-left-product>
+                    </div>
+                    <div class="col-md-9">
+                        <filter-right-product></filter-right-product>
+                        <div class="row m-0">
+                            <product_item_2 class="col-6 col-md-4"></product_item_2>
+                            <product_item_2 class="col-6 col-md-4"></product_item_2>
+                            <product_item_2 class="col-6 col-md-4"></product_item_2>
+                            <product_item_2 class="col-6 col-md-4"></product_item_2>
+                            <product_item_2 class="col-6 col-md-4"></product_item_2>
+                            <product_item_2 class="col-6 col-md-4"></product_item_2>
+                            <product_item_2 class="col-6 col-md-4"></product_item_2>
+                            <product_item_2 class="col-6 col-md-4"></product_item_2>
+                            <product_item_2 class="col-6 col-md-4"></product_item_2>
+                            <pagination class="col-12 m-0"></pagination>
+                            <div class="bg-white col-12 mb-5 p-0">
+                                <home_title home_title="có thể bạn sẽ thích"></home_title>
+                                <div class="js-carousel box-suggest mb-4" data-items="4" data-dots="false" data-loop="true">
+                                    <div class="item">
+                                        <product_item_2 class="product_item_2_3"></product_item_2>
+                                    </div>
+                                    <div class="item">
+                                        <product_item_2 class="product_item_2_3"></product_item_2>
+                                    </div>
+                                    <div class="item">
+                                        <product_item_2 class="product_item_2_3"></product_item_2>
+                                    </div>
+                                    <div class="item">
+                                        <product_item_2 class="product_item_2_3"></product_item_2>
+                                    </div>
+                                    <div class="item">
+                                        <product_item_2 class="product_item_2_3"></product_item_2>
+                                    </div>
+                                    <div class="item">
+                                        <product_item_2 class="product_item_2_3"></product_item_2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <home_title home_title="sản phẩm bạn vừa xem"></home_title>
+            <div class="js-carousel box-suggest mb-4" data-items="5" data-dots="false" data-loop="true">
+                <div class="item">
+                    <product_item_2></product_item_2>
+                </div>
+                <div class="item">
+                    <product_item_2></product_item_2>
+                </div>
+                <div class="item">
+                    <product_item_2></product_item_2>
+                </div>
+                <div class="item">
+                    <product_item_2></product_item_2>
+                </div>
+                <div class="item">
+                    <product_item_2></product_item_2>
+                </div>
+                <div class="item">
+                    <product_item_2></product_item_2>
+                </div>
+            </div>
+        </div>
+        <myfooter></myfooter>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'filter-left-product': httpVueLoader('filter-left-product.vue'),
+                'filter-right-product': httpVueLoader('filter-right-product.vue'),
+                'pagination': httpVueLoader('pagination.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'product_item_2': httpVueLoader('product_item_2.vue'),
+                'pagination': httpVueLoader('pagination.vue'),
+                'home_title': httpVueLoader('home_title.vue'),
+            },
+        });
+    </script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>

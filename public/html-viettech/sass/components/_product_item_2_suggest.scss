@@ -1,0 +1,98 @@
+.product-item-2-suggest {
+    background-color: #ffffff;
+
+    .wrap-img {
+        width: 100%;
+        display: block;
+        height: 0;
+        padding-bottom: 100%;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: contain;
+            transition: 0.3s all;
+            padding: 25px;
+        }
+    }
+
+    .body {
+        padding: 15px 17px;
+
+        .name {
+            font-size: 16px;
+            color: #666666;
+            display: block;
+
+            span {
+                display: -webkit-box;
+                height: 48px;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+        }
+
+        .price {
+            display: block;
+            margin-top: 2px;
+            color: #333333;
+            font-size: 16px;
+
+            span.new {
+                font-weight: 700;
+            }
+
+            span.old {
+                color: #999999;
+                font-size: 12px;
+                display: inline-block;
+                margin-left: 5px;
+            }
+        }
+
+        .stars {
+            margin-top: 5px;
+            display: block;
+            font-size: 16px;
+
+            .star:before {
+                display: inline-block;
+                content: "\f005";
+                font-family: FontAwesome;
+            }
+
+            .star-filled {
+                color: #ed8a19;
+            }
+
+            .rating-symbol-foreground {
+                top: 0;
+            }
+
+            .star-empty {
+                color: #c1c1c1;
+            }
+
+            span.more {
+                font-size: 12px;
+                color: #999999;
+            }
+        }
+    }
+
+    &:hover {
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+
+        .wrap-img {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

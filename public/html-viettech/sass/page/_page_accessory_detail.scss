@@ -1,0 +1,92 @@
+.page-accessory-detail{
+    .breadcrumb{
+        @media (max-width: 991px){
+            padding: 0.75rem 0;            
+        }
+    }
+    .product-wrapper{
+        .product-content-heading{
+            @media (max-width: 991px){
+                padding: 13px 0;
+            }
+        }
+        .promotion-image{
+            display: none;
+        }
+        nav.main-wrap{
+            margin: 0;
+        }
+        .custom-accessory{
+            .product-slide{
+                .product-image{
+                    overflow: hidden;
+                    a{
+                        img{
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+        .group-buy{
+            color: #333333;
+            margin-bottom: 24px;
+            .price{
+                color: #e80f0f;
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 4px;
+            }
+            .sale{
+                font-size: 14px;
+                span{
+                    text-transform: uppercase;
+                    color: #d0021b;
+                    font-size: 16px;
+                }
+            }
+            .buy-now {
+                margin-bottom: 8px;
+                button {
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #fff;
+                    background: #d0021b;
+                    height: 52px;
+                    text-transform: uppercase;
+        
+                    img {
+                        margin-right: 16px;
+                    }
+        
+                    &:focus {
+                        box-shadow: 0;
+                    }
+                }
+            }
+        }
+    
+        .specifications{
+            .title{
+                color: #000000!important;
+                font-size: 18px;
+                padding-top: 15px;
+                border-top: 1px solid #dfdfdf;
+                border-bottom: none!important;
+            }
+            .desc-detail{
+                span{
+                    font-size: 12px;
+                    color: #686868!important;
+                }
+            }
+            .view-detail{
+                button{
+                    width: 100%;
+                    border-radius: 4px!important;
+                }
+            }
+        }
+    }
+}

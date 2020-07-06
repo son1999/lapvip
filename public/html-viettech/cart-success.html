@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <myheader></myheader>
+        <main>
+            <div class="container">
+                <breadcrumb class="px-0"></breadcrumb>
+            </div>
+            <div class="container banner_page_laptop">
+                <div class="js-carousel" data-items="1" data-arrows="false">
+                    <a href="#" class="banner_item">
+                        <img src="images/banner_page_laptop.jpg" alt="">
+                    </a>
+                    <a href="#" class="banner_item">
+                        <img src="images/banner_page_laptop.jpg" alt="">
+                    </a>
+                    <a href="#" class="banner_item">
+                        <img src="images/banner_page_laptop.jpg" alt="">
+                    </a>
+                    <a href="#" class="banner_item">
+                        <img src="images/banner_page_laptop.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="cart-page cart-page-success container">
+                <div class="bg-white">
+                    <div class="text-center">
+                        <img src="images/ic_success.png" alt="">
+                        <h3>
+                            cảm ơn quý khách đã mua hàng tại lapvip.com    
+                        </h3>
+                        <p>
+                            tổng đài viên Lapvip sẽ liên hệ đến quý khách trong vòng 5 phút
+                            Xin cảm ơn!!!
+                        </p>
+                    </div>
+
+                    <div class="col-12 offset-lg-3 col-lg-6 mt-5 pt-5">
+                        <div class="info-success">		
+                            <h5>thông tin đặt hàng :</h5>
+                            <p><span>Mã đơn hàng :</span> <span>555555</span></p>
+                            <p><span>Hình thức thanh toán :</span> <span>COD</span></p>
+                            <p><span>Họ tên khách hàng :</span> <span>Thắng</span></p>
+                            <p><span>Số điện thoại :</span><span>0999999999</span></p>
+                        </div>
+    
+                        <div class="info-success">		
+                            <h5>thông tin đơn hàng ;</h5>
+                            <p><span>Iphone Xs Max 64GB</span> <span>28.888.000đ</span></p>
+                            <p><span>Màu:</span> <span>Vàng</span></p>
+                            <p><span>Số lượng :</span> <span>1</span></p>
+                        </div>
+    
+                        <a href="/" class="btn-cart-success">Mua thêm sản phẩm khác</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <myfooter></myfooter>
+    </div>
+
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'brand_laptop': httpVueLoader('brand_laptop.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'home_title': httpVueLoader('home_title.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/magiczoom.js"></script>
+    <script src="js/bootstrap-rating.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

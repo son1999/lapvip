@@ -1,0 +1,38 @@
+.blog-list-cat{
+    padding: 0 15px;
+    @media (max-width: 991px){
+        padding: 0;
+    }
+    ul{
+        padding: 15px 0;
+        @extend .d-flex, .flex-wrap;
+        @media (max-width: 991px){
+            overflow-x: auto;
+            flex-wrap: nowrap!important;
+        }
+        li{
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+            margin-right: 60px;
+            margin-bottom: 10px;
+            &.active{
+                border-bottom: 2px solid #79b53e;
+            }
+            @media (max-width: 991px){
+                margin-right: 20px;
+                margin-bottom: 0;
+                a{
+                    min-width: max-content;
+                    display: inline-block;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    a{
+        text-transform: uppercase;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 255);
+    }
+
+}

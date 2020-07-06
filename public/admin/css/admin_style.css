@@ -1,0 +1,187 @@
+@charset "utf-8";
+.fstElement{
+    width:100%;
+}
+.fstChoiceItem,.fstResultItem{
+    font-size: 1em;
+}
+.fstMultipleMode .fstQueryInput{
+    font-size: 1em;
+}
+.fstMultipleMode .fstControls{
+    width: 100%
+}
+
+.form_notice .wrap-order {
+    border: solid 1px #ced4da;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: #F7F8FA;
+    font-size: 13px;
+    margin-bottom: 20px; }
+.form_notice .wrap-order table tbody td {
+    padding-left: 10px; }
+.form_notice .wrap-order .order-head {
+    border-bottom: solid 1px #ced4da;
+    padding-bottom: 20px;
+    align-items: center; }
+.form_notice .wrap-order .order-head .order-alias span {
+    display: block;
+    line-height: 20px; }
+.form_notice .wrap-order .order-head .order-alias span:first-child {
+    font-size: 14px; }
+.form_notice .wrap-order .order-head .order-alias span:nth-child(2) {
+    color: #999; }
+.form_notice .wrap-order .order-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+.form_notice .wrap-order .order-btns a {
+    color: #9b273e;
+    margin: 0 10px;
+    font-weight: bold; }
+.form_notice .wrap-order .order-btns a:hover {
+    color: #999; }
+.form_notice .wrap-order .order-btns span {
+    padding: 10px 20px;
+    background: #CFD8DC;
+    color: #000;
+    font-weight: normal;
+    font-size: 13px;
+    width: 135px; }
+.form_notice .wrap-order .orders-products {
+    font-weight: bold; }
+.form_notice .wrap-order .orders-products .book_table_info {
+    margin-top: 20px; }
+.form_notice .wrap-order .orders-products .book_table_info li {
+    margin: 5px 0; }
+.form_notice .wrap-order .orders-products table tbody tr td:first-child {
+    width: 500px; }
+.form_notice .wrap-order .orders-products table tr td:last-child, .form_notice .wrap-order .orders-products table tr td:nth-child(2) {
+    text-align: right; }
+.form_notice .wrap-order .orders-products table tfoot td {
+    padding: 20px 10px 0 0px;
+    border-top: solid 1px #ced4da; }
+.form_notice .wrap-order .orders-products table tfoot td:first-child {
+    color: #999; }
+.form_notice .box-head-tit {
+    font-size: 24px; }
+.form_notice .box-head-tit span {
+    margin-left: 20px; }
+.form_notice .personal_infor {
+    margin-bottom: 20px; }
+.form_notice .personal_infor .box-head-tit {
+    margin-bottom: 20px; }
+
+.nav.nav-tabs a{
+    font-size:24px;
+}
+
+.table-responsive td{
+    word-break: break-all;
+}
+
+#admin_book_cart .cart-items {
+    max-height: 500px;
+    overflow: auto;
+}
+
+#admin_book_cart .cart-items .quantity input {
+    width: 40px;
+    height: 40px;
+}
+
+#product-admin-prices {
+    position:relative;
+}
+#product-admin-prices h4 {
+    line-height: unset;
+}
+#product-admin-filters {
+    position:relative;
+}
+
+.pb_loader {
+    position: absolute;
+    width:  96px;
+    height: 96px;
+    left:  50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0px 24px 64px rgba(0,0,0,0.24);
+    border-radius:16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s ease-out, visibility 0s linear .2s;
+    z-index:1000;
+}
+
+.pb_loader.fullscreen {
+    padding:  0;
+    left:  0;
+    top:  0;
+    width:  100%;
+    height: 100%;
+    transform: none;
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.pb_loader.show {
+    transition: opacity .4s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.pb_loader .circular {
+    animation: loader-rotate 2s linear infinite;
+    position: absolute;
+    left:  calc(50% - 24px);
+    top:  calc(50% - 24px);
+    display: block;
+    transform: rotate(0deg);
+}
+
+.pb_loader .path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    animation: loader-dash 1.5s ease-in-out infinite;
+    stroke-linecap: round;
+}
+
+@keyframes loader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -136px;
+    }
+}
+.wrap-img {
+    width: 30px;
+    height: 30px;
+}
+.wrap-img img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+

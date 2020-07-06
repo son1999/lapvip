@@ -1,0 +1,188 @@
+/*Login modal*/
+.login-dialog {
+    width: 904px;
+    height: 505px;
+    top: 50%;
+    margin-top: -252.5px;
+}
+
+.login-dialog .modal-body {
+    padding: 0;
+    height: 505px;
+}
+.login-dialog .modal-content {
+    border: none;
+    box-shadow: none;
+    border-radius: 4px;
+}
+.popup-l {
+    width: 505px;
+}
+.popup_bg-txt {
+    position: absolute;
+    width: 100%;
+    bottom: 18px;
+    line-height: 19px;
+    color: #424242;
+}
+.popup_bg-txt > span {
+    display: inline-block;
+    margin-left: -4px;
+    margin-right: 2px;
+    vertical-align: 0;
+    color: #ff0d07;
+}
+
+.popup-l img {
+    border-radius: 3px 0 0 3px;
+}
+.popup-r {
+    padding: 22px 39px 34px 41px;
+    height: 505px;
+
+}
+.popup-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #e5e5e5;
+    height: 71px;
+    line-height: 69px;
+    padding: 0 35px 0 40px;
+}
+.popup-footer-txt {
+    margin-right: 23px;
+}
+.popup-title {
+    padding: 0 0 21px;
+}
+.popup-social-login {
+    margin: 20px 0 0 40px;
+}
+.register-dialog .popup-social-login {
+    margin: 3px 0 25px;
+}
+.popup-subtitle {
+    padding: 0 0 16px 2px;
+}
+.register-dialog .popup-subtitle {
+    padding: 0 0 16px 0;
+    margin-left: -2px;
+}
+
+.popup-form-row {
+    position: relative;
+}
+.popup-form-row label {
+    width: 18px;
+    margin: 0 18px 33px 0px;
+    display: inline-block;
+}
+.popup-form-row .pop-input {
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    height: 31px;
+    width: 278px;
+}
+.popup-form-row-err .pop-input {
+    border-color: #ff0000;
+}
+.popup-form-row-err .err-notice {
+    background: #ff0000;
+    padding: 6px 10px;
+    margin-left: 39px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 87%;
+    z-index: 1;
+    font-style: italic;
+}
+.row-err{
+    padding: 5px 10px;
+    background: red;
+    color: #fff;
+    margin: 0 0 10px;
+}
+.popup-form-btn button {
+    border-radius: 3px;
+    background: #ffcb48;
+    border: 1px solid #e1b954;
+    color: #5c4406;
+    width: 282px;
+    height: 42px;
+    margin: 15px 0 0 39px;
+}
+.popup-form-btn button:hover {
+    opacity: .9;
+}
+.popup-footer-btn button {
+    border-radius: 3px;
+    border: 1px solid #21c2c1;
+    color: #21c2c1;
+    width: 172px;
+    background: #fff;
+    transition: all .2s ease-in-out;
+}
+.popup-footer-btn button:hover {
+    background: #21c2c1;
+    color: #fff;
+}
+.popup-subcribe-check input[type="checkbox"] {
+    display: none;
+}
+.popup-subcribe-check label {
+    display: block;
+    position: relative;
+    padding:  0 0 0 38px;
+    margin: -5px 0 20px 0;
+    line-height: 18px;
+}
+.popup-subcribe-check label:before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 28px;
+    background: #fff url("../images/login/checkbox.png") no-repeat;
+    position: absolute;
+    top: -6px;
+    left: 1px;
+    transition: all .3s ease-in-out;
+}
+.popup-subcribe-check input[type="checkbox"]:checked + label:before {
+    background-image: url("../images/login/checkbox-active.png");
+}
+.popup-fb, .popup-google{
+    background: #3e5699 url("../images/login/fb.png") no-repeat 0 center;
+    background-size: 50px auto;
+    display: block;
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 32px;;
+    margin-bottom: 20px;
+}
+.popup-google{
+    background-image: url("../images/login/gplus.png");
+    background-color: #dc4e41;
+}
+.popup-fb a, .popup-google a{
+    display: block;
+    width: 248px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+}
+.btn-forgot-password{
+    display: block;
+    margin: 20px 0 0 40px;
+    text-align: center;
+    color: #21c2c1;
+    font-size: 14px;
+}
+
+.make-right{float: right}
+.make-left{float: left}
+.clearfix{clear: both}

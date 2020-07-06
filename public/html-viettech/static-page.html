@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <myheader></myheader>
+        <main>
+            <div class="container">
+                <breadcrumb class="px-0"></breadcrumb>
+                <div class="bg-white static-page">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <static-sidebar></static-sidebar>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="static-content">
+                                <h3>Chính sách giao hàng</h3>
+
+                                <div class="box-static-content">
+                                    <h6>60 Phút giao hàng</h6>
+                                    <ul class="p-2">
+                                        <li>
+                                            <p><i class="fa fa-check" aria-hidden="true"></i> Cam kết giao hàng tối đa trong vòng 60 phút (bán kính 10km) toàn bộ 63 tỉnh thành FPT Shop nhận giao đơn
+                                                hàng có thời gian hẹn giao tại nhà trước 21h00 đối với</p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fa fa-check" aria-hidden="true"></i> iện thoại, Máy tính bảng và trước 20h00 đối với Máy tính xách tay.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="box-static-content">
+                                    <h6>60 Phút giao hàng</h6>
+                                    <ul class="p-2">
+                                        <li>
+                                            <p><i class="fa fa-check" aria-hidden="true"></i> Cam kết giao hàng tối đa trong vòng 60 phút (bán kính 10km) toàn bộ 63 tỉnh thành FPT Shop nhận giao đơn
+                                                hàng có thời gian hẹn giao tại nhà trước 21h00 đối với</p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fa fa-check" aria-hidden="true"></i> iện thoại, Máy tính bảng và trước 20h00 đối với Máy tính xách tay.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="box-static-content">
+                                    <h6>60 Phút giao hàng</h6>
+                                    <ul class="p-2">
+                                        <li>
+                                            <p><i class="fa fa-check" aria-hidden="true"></i> Cam kết giao hàng tối đa trong vòng 60 phút (bán kính 10km) toàn bộ 63 tỉnh thành FPT Shop nhận giao đơn
+                                                hàng có thời gian hẹn giao tại nhà trước 21h00 đối với</p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fa fa-check" aria-hidden="true"></i> iện thoại, Máy tính bảng và trước 20h00 đối với Máy tính xách tay.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="box-static-content">
+                                    <h6>60 Phút giao hàng</h6>
+                                    <ul class="p-2">
+                                        <li>
+                                            <p><i class="fa fa-check" aria-hidden="true"></i> Cam kết giao hàng tối đa trong vòng 60 phút (bán kính 10km) toàn bộ 63 tỉnh thành FPT Shop nhận giao đơn
+                                                hàng có thời gian hẹn giao tại nhà trước 21h00 đối với</p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fa fa-check" aria-hidden="true"></i> iện thoại, Máy tính bảng và trước 20h00 đối với Máy tính xách tay.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <myfooter></myfooter>
+    </div>
+
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+                'breadcrumb': httpVueLoader('breadcrumb.vue'),
+                'static-sidebar': httpVueLoader('static-sidebar.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/magiczoom.js"></script>
+    <script src="js/bootstrap-rating.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
